@@ -751,7 +751,7 @@ img {
     .my-portfolio{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin:30px;
+        margin:10px;
         min-width: 95%;
         padding: 5px;
     }

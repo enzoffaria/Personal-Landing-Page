@@ -318,7 +318,7 @@ img {
 
 @media (max-width: 1050px) {
     .contetion-for-used-tools {
-        width: 106%;
+        width: 100%;
     }
     .used-tools-bg {
         gap: 5px;  
@@ -327,10 +327,10 @@ img {
 
 @media (max-width: 800px) {
     .contetion-for-used-tools {
-        width: 106%;
+        width: 100%;
     }
     .used-tools {
-        width: 106%;
+        width: 100%;
         overflow: visible;
         position: relative;
     }
@@ -434,7 +434,7 @@ img {
     .container-skillcards .cards {
         margin: 0 auto;
         margin-top: 50px;
-        width: 106%;
+        width: 100%;
         padding: 40px;
     }
     .container-skillcards h1 {
@@ -558,7 +558,7 @@ img {
 
 @media (max-width: 1050px){
     .contetion-for-infinite-slider{
-        width: 106%;
+        width: 100%;
     }
 }
 
@@ -709,7 +709,7 @@ img {
         max-width: 100% !important;
     }
     .my-portfolio{
-        min-width: 106%;
+        min-width: 100%;
     }
 }
 
@@ -902,7 +902,7 @@ img {
 
 @media (max-width: 1050px){
     .project-i-worked{
-        width:106%;
+        width:100%;
         grid-template-columns: 40% 1fr;
     }
     .project-i-worked > h2 {
@@ -929,7 +929,7 @@ img {
         overflow-x: scroll;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
-        width: 106%;
+        width: 100%;
         padding: 50px 0px 50px 0px;
         margin-top: -60px
     }
@@ -1034,7 +1034,7 @@ img {
         gap: 8px;
     }
     .grid-work-gallery{
-        width: 106%;
+        width: 100%;
         padding: 0px 50px 0px 50px;
     }
     
@@ -1075,7 +1075,7 @@ img {
     .gallery{
         grid-template-columns: repeat(3, minmax(300px, 1fr));
         gap: 15px;
-        width: 111%;
+        width: 100%;
         justify-content: left;
         padding: 40px;
         overflow-x: scroll;
@@ -1155,7 +1155,7 @@ img {
 
 @media (max-width: 1000px){
     .skills-and-qualities{
-        width: 106%;
+        width: 100%;
     }
 }
 
@@ -1290,7 +1290,7 @@ img {
 
 @media (max-width: 1050px){
     .courses-i-have{
-        min-width: 106%;
+        min-width: 100%;
     }
 }
 
@@ -1368,4 +1368,3 @@ img {
         gap:6px !important;
     }
 }
-

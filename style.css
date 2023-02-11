@@ -318,7 +318,7 @@ img {
 
 @media (max-width: 1050px) {
     .contetion-for-used-tools {
-        width: 109%;
+        width: 106%;
     }
     .used-tools-bg {
         gap: 5px;  
@@ -327,7 +327,7 @@ img {
 
 @media (max-width: 800px) {
     .contetion-for-used-tools {
-        width: 108%;
+        width: 106%;
     }
     .used-tools {
         width: 106%;
@@ -434,7 +434,7 @@ img {
     .container-skillcards .cards {
         margin: 0 auto;
         margin-top: 50px;
-        width: 108%;
+        width: 106%;
         padding: 40px;
     }
     .container-skillcards h1 {
@@ -558,7 +558,7 @@ img {
 
 @media (max-width: 1050px){
     .contetion-for-infinite-slider{
-        width: 108.4%;
+        width: 106%;
     }
 }
 
@@ -751,8 +751,8 @@ img {
     .my-portfolio{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin:30px;
-        min-width: 100%;
+        margin:10px;
+        min-width: 95%;
         padding: 5px;
     }
     .card-portfolio h2 {
@@ -929,7 +929,7 @@ img {
         overflow-x: scroll;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
-        width: 109%;
+        width: 106%;
         padding: 50px 0px 50px 0px;
         margin-top: -60px
     }
@@ -1290,7 +1290,7 @@ img {
 
 @media (max-width: 1050px){
     .courses-i-have{
-        min-width: 108%;
+        min-width: 106%;
     }
 }
 

@@ -370,8 +370,16 @@ img {
 }
 
 @media (max-width: 650px){
+    .contetion-for-used-tools{
+        min-width: 109%;
+    }
     .used-tools {
         width: 110%;
+    }
+}
+@media (max-width: 550px){
+    .contetion-for-used-tools{
+        min-width: 107%;
     }
 }
 
@@ -478,11 +486,20 @@ img {
     }  
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
+    .container-skillcards .cards{
+        min-width: 109%;
+    }      
+}
+
+@media (max-width: 550px) {
     .container-skillcards .skillcard:hover {
         box-shadow: #1d51fe77 0px 25px 60px 10px;
         transform: scale(1.05);
-    }          
+    }   
+    .container-skillcards .cards{
+        min-width: 107%;
+    }      
 }
 
 /* INFINITE AUTOMATIC SLIDER */
@@ -567,6 +584,18 @@ img {
         margin-top: 30px;
         animation:  slider 30s linear 0s infinite;
         -webkit-animation: slider 30s linear infinite; 
+    }
+}
+
+@media (max-width: 650px){
+    .contetion-for-infinite-slider{
+        min-width: 109%;
+    }
+}
+
+@media (max-width: 550px){
+    .contetion-for-infinite-slider{
+        min-width: 107.4%;
     }
 }
 
@@ -752,7 +781,7 @@ img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin:30px;
-        min-width: 98%;
+        min-width: 100%;
         padding: 5px;
     }
     .card-portfolio h2 {
@@ -782,6 +811,9 @@ img {
 }
 
 @media (max-width: 570px){
+    .my-portfolio{
+        min-width: 98%;
+    }
     .portfolio {
         display: block;
     }
@@ -1116,6 +1148,12 @@ img {
         background: var(--color-blue-300);
         border-radius: 10px;
     } 
+}
+
+@media (max-width: 570px){
+    .gallery{
+        width: 112%;
+    }
 }
 
 /* SKIILS AND QUALITIES */

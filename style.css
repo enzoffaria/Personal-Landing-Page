@@ -122,15 +122,15 @@ img {
     transition: 0.3s ease-in-out;
 }
 
+.header nav ul li a:hover {
+    transform: scale(1.05);
+}
+
 .header nav ul li:nth-last-child(1) a:hover {
     background-color: var(--font-color-900);
     transform: scale(1);
     border: 2px solid var(--font-color-900);
     color: var(--color-blue-500);
-}
-
-.header nav ul li a:hover {
-    transform: scale(1.05);
 }
 
 @media (max-width: 550px){

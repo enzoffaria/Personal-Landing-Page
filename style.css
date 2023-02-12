@@ -299,6 +299,7 @@ img {
     display: flex;
     align-items: center;
     padding: 10px;
+    padding-right: 40px;
     gap: 10px;
     color: var(--font-color-900);
     transition: ease-in-out 0.3s;
@@ -922,8 +923,17 @@ img {
     font-size: 13px;
 }
 
-.cardwork:nth-child(2){
+#cardwork1{
+    order:2;
     background-color: var(--color-blue-100);
+}
+
+#cardwork2{
+    order:1;
+}
+
+#cardwork3{
+    order:3;
 }
 
 .cardwork:hover {
@@ -981,7 +991,10 @@ img {
     .cards-worked::-webkit-scrollbar-thumb /*scrollbar*/{
         background: var(--color-blue-300);
         border-radius: 10px;
-    }  
+    } 
+    #cardwork1{
+        order: 1;
+    }
 }
 @media (max-width: 650px){
     .project-i-worked{

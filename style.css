@@ -1217,6 +1217,25 @@ img {
 
 /* COURSES I HAVE */
 
+.contetion-for-courses{
+    text-align: left;
+    color: var(--font-color-900);
+}
+
+.contetion-for-courses >h1 {
+  padding: 50px;
+  position: relative;
+}
+
+.contetion-for-courses > h1::before {
+    content: "";
+    width: 200px;
+    position: absolute;
+    height: 2px;
+    bottom: 25px;
+    background-color: var(--font-color-900);
+  }
+
 .courses-i-have{
     max-width: 100%;
     margin: 0 auto;

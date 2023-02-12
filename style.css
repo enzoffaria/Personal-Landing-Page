@@ -1219,6 +1219,8 @@ img {
 
 .contetion-for-courses{
     text-align: left;
+    padding: 40px;
+    padding-right: 0px;
     color: var(--font-color-900);
 }
 

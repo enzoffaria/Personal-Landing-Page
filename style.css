@@ -386,9 +386,9 @@ img {
 
 @keyframes seta {
     from {
-        right: 15%;  
+        right: 8%;  
     }to {
-        right: 18%;
+        right: 12%;
     }
 }
 
@@ -1052,10 +1052,10 @@ img {
 }
 
 .courses-i-have::-webkit-scrollbar-track /* fundo da scrollbar*/{
-    background-color: var(--color-gray-blue-400)
+    background-color: var(--color-gray-blue-400);
 } 
 .courses-i-have::-webkit-scrollbar /* tamanho da scrollbar*/{
-    height: 4px;
+    height: 10px;
 }
 .courses-i-have::-webkit-scrollbar-thumb /*scrollbar*/{
     background: var(--color-blue-300);
@@ -1150,9 +1150,32 @@ img {
     color: #ffffff9d;
 }
 
+@media (max-width: 1200px){
+    .contetion-for-courses{
+        padding-left: 0px;
+        position: relative;
+    }
+    .contetion-for-courses::after{
+        content: '→';
+        position: absolute;
+        top: 150px;
+        right: 30px;
+        color: var(--font-color-900);
+        animation: seta 1s ease-in-out 0s infinite alternate-reverse;
+    }
+}
+
 @media (max-width: 1050px){
+    .contetion-for-courses{
+        padding-left: 0px;
+        position: relative;
+    }
+    .contetion-for-courses >h1{
+        padding-left: 10%;
+    }
     .courses-i-have{
         min-width: 106%;
+        padding-left:10%;
     }
 }
 

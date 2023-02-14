@@ -28,6 +28,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -230,7 +231,6 @@ img {
     }
 }
 
-
 @media (max-width: 850px){  
     .section-banner .apresentation {
         width: 80%;
@@ -392,7 +392,7 @@ img {
     }
 }
 
-/* CONTAINER SKILL CARDS */
+/* HABILIDADES QUE TENHO */
 
 .container-skillcards {
     margin: 30px auto;
@@ -503,7 +503,7 @@ img {
     }      
 }
 
-/* INFINITE AUTOMATIC SLIDER */
+/* SLIDER INFINITO */
 
 .contetion-for-infinite-slider{
     width: 100%;
@@ -600,7 +600,7 @@ img {
     }
 }
 
-/* SECTION MY PORTFOLIO */
+/* MEU PORTFOLIO */
 
 .my-portfolio{
     display: grid;
@@ -864,7 +864,7 @@ img {
     }
 }
 
-/* PROJECTS THAN USUALLY I WORK */
+/* PROJETOS QUE TRABALHO */
 
 .project-i-worked {
     margin-top: 50px;
@@ -1014,7 +1014,149 @@ img {
     }
 }
 
-/* WORK GALLERY */
+/* MINHAS CERTIFICAÇÕES */
+
+.contetion-for-courses{
+    text-align: left;
+    padding: 40px;
+    padding-right: 0px;
+    color: var(--font-color-900);
+    position: relative;
+}
+
+.contetion-for-courses >h1 {
+  padding: 50px;
+  position: relative;
+}
+
+.contetion-for-courses > h1::before {
+    content: "";
+    width: 200px;
+    position: absolute;
+    height: 2px;
+    bottom: 25px;
+    background-color: var(--font-color-900);
+  }
+
+.courses-i-have{
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: start;
+    gap: 25px;
+    flex-shrink: 0;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.courses-i-have::-webkit-scrollbar-track /* fundo da scrollbar*/{
+    background-color: var(--color-gray-blue-400)
+} 
+.courses-i-have::-webkit-scrollbar /* tamanho da scrollbar*/{
+    height: 4px;
+}
+.courses-i-have::-webkit-scrollbar-thumb /*scrollbar*/{
+    background: var(--color-blue-300);
+    border-radius: 10px;
+} 
+
+.card-course{
+    background-color: var(--color-gray-blue-400);
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 250px;
+    transition: ease-in-out 0.3s;
+}
+
+.card-course:hover {
+    transform: scale(1.015);
+}
+
+.card-course > a {
+    display: contents;
+}
+
+.card-course > a img {
+    border-radius: 30px;
+    box-shadow: var(--color-blue-900) 0px 0px 15px 2.5px;
+    cursor: pointer;
+}
+
+.card-course .info-course{
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+}
+
+.info-course .title-info{
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 20% 1fr;
+    column-gap: 15px;
+    align-items: top;
+    margin-bottom: 10px;
+}
+
+.info-course .title-info > h6 a{
+    color: var(--font-color-900);
+    font-weight: 600;
+    font-size: 16px;
+    transition: ease-in-out 0.1s;
+}
+
+.info-course .title-info > img {
+    grid-row: 1 / -1;
+}
+
+.info-course .title-info > span {
+    grid-column: 2;
+    margin-top: -19px;
+    font:600 13px 'Poppins';
+    color:#3b548e;;
+}
+
+.info-course .extra-info{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    column-gap: 60px;
+    align-items: center;
+}
+
+.info-course .extra-info > h1 {
+    color:#3b548e;
+    font-size: 28px;
+    margin-top: -5px;
+}
+
+.info-course .extra-info > span, a{
+    grid-column: 1/-1;
+    font: 600 13px 'Poppins';
+    color:#3b548e;
+    transition: ease-in-out 0.2s;
+}
+
+.info-course .extra-info span:nth-last-child(1){
+    justify-self: end;
+    grid-column: 2;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.info-course .extra-info span:nth-last-child(1):hover a{
+    color: #ffffff9d;
+}
+
+@media (max-width: 1050px){
+    .courses-i-have{
+        min-width: 106%;
+    }
+}
+
+/* GALERIA DE TRABALHOS */
 
 .grid-work-gallery{
     width: 90%;
@@ -1169,7 +1311,7 @@ img {
     }
 }
 
-/* SKIILS AND QUALITIES */
+/* QUALIDADES E INICIATIVAS */
 
 .skills-and-qualities{
     width: 90%;
@@ -1227,150 +1369,6 @@ img {
         font-size: 30px;
     }
 }
-
-/* COURSES I HAVE */
-
-.contetion-for-courses{
-    text-align: left;
-    padding: 40px;
-    padding-right: 0px;
-    color: var(--font-color-900);
-    position: relative;
-}
-
-.contetion-for-courses >h1 {
-  padding: 50px;
-  position: relative;
-}
-
-.contetion-for-courses > h1::before {
-    content: "";
-    width: 200px;
-    position: absolute;
-    height: 2px;
-    bottom: 25px;
-    background-color: var(--font-color-900);
-  }
-
-.courses-i-have{
-    width: 100%;
-    margin: 0 auto;
-    padding: 40px;
-    display: flex;
-    justify-content: start;
-    gap: 25px;
-    flex-shrink: 0;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-.courses-i-have::-webkit-scrollbar-track /* fundo da scrollbar*/{
-    background-color: var(--color-gray-blue-400)
-} 
-.courses-i-have::-webkit-scrollbar /* tamanho da scrollbar*/{
-    height: 4px;
-}
-.courses-i-have::-webkit-scrollbar-thumb /*scrollbar*/{
-    background: var(--color-blue-300);
-    border-radius: 10px;
-} 
-
-.card-course{
-    background-color: var(--color-gray-blue-400);
-    padding: 15px;
-    border-radius: 25px;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    width: 250px;
-    transition: ease-in-out 0.3s;
-}
-
-.card-course:hover {
-    transform: scale(1.015);
-}
-
-.card-course > a {
-    display: contents;
-}
-
-.card-course > a img {
-    border-radius: 30px;
-    box-shadow: var(--color-blue-900) 0px 0px 15px 2.5px;
-    cursor: pointer;
-}
-
-.card-course .info-course{
-    display: grid;
-    grid-template-columns: minmax(200px, 1fr);
-}
-
-.info-course .title-info{
-    display: grid;
-    padding: 5px;
-    grid-template-columns: 20% 1fr;
-    column-gap: 15px;
-    align-items: top;
-    margin-bottom: 10px;
-}
-
-.info-course .title-info > h6 {
-    color: var(--font-color-900);
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
-    transition: ease-in-out 0.1s;
-}
-
-.info-course .title-info > img {
-    grid-row: 1 / -1;
-}
-
-.info-course .title-info > span {
-    grid-column: 2;
-    margin-top: -19px;
-    font:600 13px 'Poppins';
-    color:#3b548e;;
-}
-
-.info-course .extra-info{
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    column-gap: 60px;
-    align-items: center;
-}
-
-.info-course .extra-info > h1 {
-    color:#3b548e;
-    font-size: 28px;
-    margin-top: -5px;
-}
-
-.info-course .extra-info > span, a{
-    grid-column: 1/-1;
-    font: 600 13px 'Poppins';
-    color:#3b548e;
-    transition: ease-in-out 0.2s;
-}
-
-.info-course .extra-info span:nth-last-child(1){
-    justify-self: end;
-    grid-column: 2;
-    cursor: pointer;
-    transition: ease-in-out 0.2s;
-}
-
-.info-course .extra-info span:nth-last-child(1):hover a{
-    color: #ffffff9d;
-}
-
-@media (max-width: 1050px){
-    .courses-i-have{
-        min-width: 106%;
-    }
-}
-
 
 /* FOOTER */
 

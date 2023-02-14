@@ -2,10 +2,19 @@
     background-color: #000615 !important;
     background: none;
     overflow: hidden;
+    padding: 30px;
+}
+
+.body-courses > a{
+    padding: 20px;
+    min-width: 150px;
+    max-width: 150px;
+    color: var(--font-color-900);
+    font-size: 15px;
 }
 
 .container-courses{
-    margin: 200px auto;
+    margin: 110px auto;
     text-align: center;
     display: flex;
     flex-direction: column;

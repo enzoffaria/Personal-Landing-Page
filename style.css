@@ -1014,7 +1014,7 @@ img {
     }
 }
 
-/* MINHAS CERTIFICAÇÕES */
+/* MINHAS HABILIDADES */
 
 .contetion-for-courses{
     text-align: left;
@@ -1077,11 +1077,7 @@ img {
     transform: scale(1.015);
 }
 
-.card-course > a {
-    display: contents;
-}
-
-.card-course > a img {
+.card-course > img {
     border-radius: 30px;
     box-shadow: var(--color-blue-900) 0px 0px 15px 2.5px;
     cursor: pointer;
